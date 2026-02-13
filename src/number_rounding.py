@@ -3,3 +3,5 @@ def round_number(num, decimals):
         raise TypeError("Invalid input")
     factor = 10 ** decimals
     return round(num * factor) / factor
+
+print(round_number(3.456, 2))
