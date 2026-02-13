@@ -3,7 +3,7 @@ from src.number_rounding import round_number
 
 @given('the number is {number:g}')
 def step_number(context, number):
-    context.number = int(number)
+    context.number = float(number)
 
 @given('the decimal place is {decimal}')
 def step_decimal(context, decimal):
