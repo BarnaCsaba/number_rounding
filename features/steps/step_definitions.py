@@ -12,8 +12,10 @@ def step_decimal(context, decimal):
 @when('I am rounding the number')
 def step_round(context):
     context.result = round_number(context.number, context.decimal)
+#assert context.result == expected_result, \
+#        f"Expected '{expected_result}', but got '{context.result}'"
 
-@then('the result must be "{expected_result:g}")')
+@then('the result must be {expected_result:g}')
 def step_result(context, expected_result):
         assert context.result == expected_result, \
         f"Expected '{expected_result}', but got '{context.result}'"

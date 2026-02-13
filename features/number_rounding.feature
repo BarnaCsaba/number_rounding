@@ -37,13 +37,13 @@ Scenario: Negative number upside
     Given the number is -3.7
     And the decimal place is 0
     When I am rounding the number
-    Then the result must be 4
+    Then the result must be -4
 
 Scenario: Negative number downside
     Given the number is -3.2
     And the decimal place is 0
     When I am rounding the number
-    Then the result must be 3
+    Then the result must be -3
 
 
 
